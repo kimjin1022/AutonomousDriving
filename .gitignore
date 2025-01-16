@@ -1,1 +1,5 @@
 datasets/
+
+*.pth
+
+*.mp4
