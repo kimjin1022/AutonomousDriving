@@ -1,0 +1,15 @@
+artifact_uri: /home/jinjinjara1022/AutonomousDriving/ObjectDetection/runs/mlflow/434999122297909307/fe20a395e37545a68ddef69059287796/artifacts
+end_time: 1754901780017
+entry_point_name: ''
+experiment_id: '434999122297909307'
+lifecycle_stage: active
+run_id: fe20a395e37545a68ddef69059287796
+run_name: coco_yv8n
+run_uuid: fe20a395e37545a68ddef69059287796
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754899237832
+status: 3
+tags: []
+user_id: jinjinjara1022
