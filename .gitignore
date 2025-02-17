@@ -1,6 +1,7 @@
 datasets/
 
 *.pth
+*.pt
 ObjectDetection/runs
 
 *.mp4
