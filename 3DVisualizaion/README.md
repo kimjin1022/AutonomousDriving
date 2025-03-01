@@ -1,25 +1,25 @@
 # KITTI 3D Visualization
 
-KITTI Object Detection 데이터셋을 이용해 **이미지 / LiDAR / 3D 박스**를 시각화한 프로젝트.
+KITTI Object Detection 데이터셋을 활용해  
+**LiDAR 포인트 클라우드와 3D 객체 라벨을 직관적으로 이해**하고,  
+**3D ↔ 2D 변환(Projection) 과정**을 직접 구현·검증한 프로젝트.
 
 ---
 
 ## 진행 내용
-- **Image + 2D GT**
-  - RGB 이미지에 2D Ground Truth 박스를 굵고 선명하게 표시
-  - 객체 종류별 색상 구분 (Car, Pedestrian, Cyclist 등)
-
-- **LiDAR 멀티뷰**
-  - 3D(사선), BEV(탑뷰), Side(X–Z), Front(Y–Z) 시점에서 포인트 클라우드 표시
-  - ROI 설정, 다운샘플링 적용으로 가시성 개선
-
-- **3D GT Boxes (LiDAR 공간)**
-  - `forward/left/up` 좌표계에서 굵고 진하게 렌더
-  - 두 가지 시점(azim -135°, +135°)에서 비교
-
-- **Image + 3D Projection**
-  - 3D Bounding Box를 카메라 이미지에 투영해 시각화
-  - 모든 객체에 대해 3D가 유효하면 3D 박스, 아니면 2D 박스 표시
+- **LiDAR 데이터 이해**
+  - 거리·고도·밀도에 따른 포인트 분포 확인
+  - ROI 설정과 다운샘플링으로 가시성 개선
+- **3D 라벨 구조 파악**
+  - `dims[h,w,l]`, `loc[x,y,z]`, `ry` 의미 및 좌표계 정리
+- **3D → 2D 투영**
+  - `Tr_velo_to_cam` + `R0_rect`로 카메라 좌표 변환
+  - `P2`를 이용해 이미지 평면에 사영 후 시각화
+- **다양한 시점에서 시각화**
+  - Image + 2D GT
+  - LiDAR 멀티뷰 (3D, BEV, Side, Front)
+  - 3D GT Boxes (LiDAR 공간, 두 시점)
+  - Image + Projected 3D Boxes
 
 ---
 
@@ -42,13 +42,19 @@ KITTI Object Detection 데이터셋을 이용해 **이미지 / LiDAR / 3D 박스
 - **KITTI Object Detection**
   - `image_2/` : RGB 이미지
   - `label_2/` : 2D & 3D 라벨
-  - `velodyne/` : LiDAR 포인트 클라우드
-  - `calib/` : 카메라-라이다 캘리브레이션 정보
+  - `velodyne/` : LiDAR 포인트 클라우드 (`.bin` : x,y,z,intensity)
+  - `calib/` : 카메라-라이다 캘리브레이션 (`P2`, `R0_rect`, `Tr_velo_to_cam`)
 
+---
+
+## 코드
+- `visualize_2d.py` → 이미지 + 2D GT 시각화  
+- `visualize_lidar.py` → LiDAR 멀티뷰 시각화  
+- `visualize_3d_gt.py` → LiDAR 공간에서 3D GT 박스 표시  
+- `visualize_proj_3d.py` → 3D 박스 카메라 이미지에 투영
 
 ---
 
 ## 메모
-- KITTI는 카메라 좌표계 정의가 중요 (h, w, l 순서, bottom center 기준)
-- 3D 박스 크기 오차는 캘리브레이션 매트릭스 적용 여부와 좌표계 정의 차이에서 발생
-- BEV 시각화는 추후 BEV Detection / Segmentation 실험에 활용 가능
+- 이 시각화를 통해 **라이다 데이터 구조, 3D 라벨 의미, 3D→2D 변환 과정**을 직관적으로 이해할 수 있음  
+- 향후 3D Detection / BEV 실험에 활용
