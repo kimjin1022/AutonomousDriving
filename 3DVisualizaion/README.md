@@ -45,13 +45,6 @@ KITTI Object Detection 데이터셋을 활용해
   - `velodyne/` : LiDAR 포인트 클라우드 (`.bin` : x,y,z,intensity)
   - `calib/` : 카메라-라이다 캘리브레이션 (`P2`, `R0_rect`, `Tr_velo_to_cam`)
 
----
-
-## 코드
-- `visualize_2d.py` → 이미지 + 2D GT 시각화  
-- `visualize_lidar.py` → LiDAR 멀티뷰 시각화  
-- `visualize_3d_gt.py` → LiDAR 공간에서 3D GT 박스 표시  
-- `visualize_proj_3d.py` → 3D 박스 카메라 이미지에 투영
 
 ---
 
