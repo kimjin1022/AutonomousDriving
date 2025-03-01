@@ -1,8 +1,7 @@
 # KITTI 3D Visualization
 
 KITTI Object Detection 데이터셋을 활용해  
-**LiDAR 포인트 클라우드와 3D 객체 라벨을 직관적으로 이해**하고,  
-**3D ↔ 2D 변환(Projection) 과정**을 직접 구현·검증한 프로젝트.
+**LiDAR 포인트 클라우드와 3D 객체 라벨을 직관적으로 이해**
 
 ---
 
@@ -12,9 +11,6 @@ KITTI Object Detection 데이터셋을 활용해
   - ROI 설정과 다운샘플링으로 가시성 개선
 - **3D 라벨 구조 파악**
   - `dims[h,w,l]`, `loc[x,y,z]`, `ry` 의미 및 좌표계 정리
-- **3D → 2D 투영**
-  - `Tr_velo_to_cam` + `R0_rect`로 카메라 좌표 변환
-  - `P2`를 이용해 이미지 평면에 사영 후 시각화
 - **다양한 시점에서 시각화**
   - Image + 2D GT
   - LiDAR 멀티뷰 (3D, BEV, Side, Front)
@@ -49,5 +45,5 @@ KITTI Object Detection 데이터셋을 활용해
 ---
 
 ## 메모
-- 이 시각화를 통해 **라이다 데이터 구조, 3D 라벨 의미, 3D→2D 변환 과정**을 직관적으로 이해할 수 있음  
+- 이 시각화를 통해 **라이다 데이터 구조, 3D 라벨 의미**을 직관적으로 이해할 수 있음  
 - 향후 3D Detection / BEV 실험에 활용
