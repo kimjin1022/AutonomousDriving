@@ -3,7 +3,7 @@
 카메라 한 대로 3D 박스를 예측하고, 좌측은 이미지·우측은 BEV(탑뷰)로 시각화  
 훈련은 KITTI **3d Object**, 추론은 **카메라만** 사용
 
-> ![demo](assets/3d_demo.gif)
+> ![demo](assets/track_0003.gif)
 > 나름 괜찮은 것 같기도 한데… **BEV를 보면 객체들이 춤을 추는중...**.
 
 ---
@@ -27,9 +27,6 @@
 
 - KITTI Object testing (단일 프레임)  
   ![combo_test](assets/000021_preview_3d_bev.jpg)
-
-- KITTI Tracking (GIF)  
-  ![track_gif](assets/3d_demo.gif)
 
 ---
 
