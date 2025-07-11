@@ -22,22 +22,21 @@ KITTI Tracking 데이터셋으로 **검출 → 추적 → 평가 → 테스트**
 ---
 
 ## 결과 예시
-> 아래 파일들을 `assets/` 폴더에 두면 바로 보입니다.
 
 ### GT 1프레임 시각화
-![gt_vis](ObjectTracking/outputs/vis/step1_gt_seq0000_f0000.jpg)
+![gt_vis](assets/step1_gt_seq0000_f0000.jpg)
 
 ### YOLO 검출 1프레임
-![yolo_det](ObjectTracking/outputs/vis/step2_seq0000_f0000.jpg)
+![yolo_det](assets/step2_seq0000_f0000.jpg)
 
 ### iou
-![sort_demo](ObjectTracking/outputs/vis/step5_seq0000_iou_traj.gif)
+![sort_demo](assets/step5_seq0000_iou_traj.gif)
 
 ### SORT + CMC (카메라 모션 보정)
-![sortcmc_demo](ObjectTracking/outputs/vis/step7_5_seq0000_sortcmc_traj.gif)
+![sortcmc_demo](assets/step7_5_seq0000_sortcmc_traj.gif)
 
 ### 테스트 시퀀스 GIF (시각 점검용)
-![test_demo](ObjectTracking/outputs/vis/test_seq0000_sortcmc.gif)
+![test_demo](assets/test_seq0000_sortcmc.gif)
 
 ---
 
