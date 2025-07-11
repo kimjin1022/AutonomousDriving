@@ -1,0 +1,2 @@
+,num_frames,mota,motp,idf1,idp,idr,num_switches,num_objects,num_predictions,mostly_tracked,mostly_lost
+0000_cyclist,154,0.974025974025974,0.185885590700286,0.987012987012987,0.987012987012987,0.987012987012987,0,154,154,1,0

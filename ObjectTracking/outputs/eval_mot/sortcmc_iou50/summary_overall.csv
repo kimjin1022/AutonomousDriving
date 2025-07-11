@@ -1,0 +1,2 @@
+,num_frames,mota,motp,idf1,idp,idr,num_switches,num_objects,num_predictions,mostly_tracked,mostly_lost
+0000_all,154,0.749648382559775,0.243573479692686,0.8586883029073699,0.8268229166666666,0.8931082981715893,13,711,768,12,0

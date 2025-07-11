@@ -1,0 +1,2 @@
+,num_frames,mota,motp,idf1,idp,idr,num_switches,num_objects,num_predictions,mostly_tracked,mostly_lost
+0000_pedestrian,154,-0.3181818181818181,0.22540180127933704,0.2545454545454545,0.21212121212121213,0.3181818181818182,8,22,33,1,0

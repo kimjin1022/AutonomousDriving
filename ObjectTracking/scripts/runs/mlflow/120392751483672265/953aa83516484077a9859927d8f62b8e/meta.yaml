@@ -1,0 +1,15 @@
+artifact_uri: /home/jinjinjara1022/AutonomousDriving/ObjectTracking/scripts/runs/mlflow/120392751483672265/953aa83516484077a9859927d8f62b8e/artifacts
+end_time: 1755011052476
+entry_point_name: ''
+experiment_id: '120392751483672265'
+lifecycle_stage: active
+run_id: 953aa83516484077a9859927d8f62b8e
+run_name: kitti_y8n_1280
+run_uuid: 953aa83516484077a9859927d8f62b8e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755010409468
+status: 3
+tags: []
+user_id: jinjinjara1022

@@ -1,0 +1,2 @@
+,num_frames,mota,motp,idf1,idp,idr,num_switches,num_objects,num_predictions,mostly_tracked,mostly_lost
+0000_car,154,0.7289719626168225,0.26217486833996406,0.8530465949820788,0.8192771084337349,0.8897196261682243,5,535,581,10,0
