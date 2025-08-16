@@ -1,4 +1,6 @@
 datasets/
+outputs/
+coco128/
 
 *.pth
 *.pt
